@@ -1,0 +1,463 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"coll",
+				"collapse"
+			],
+			[
+				"col",
+				"collapsePages1"
+			],
+			[
+				"c",
+				"class\tAttr"
+			],
+			[
+				"fon",
+				"font-weight\tproperty"
+			],
+			[
+				"ba",
+				"background-color\tproperty"
+			],
+			[
+				"back",
+				"background-position\tproperty"
+			],
+			[
+				"m",
+				"mb-4"
+			],
+			[
+				"re",
+				"required\tAttr"
+			],
+			[
+				"onc",
+				"onclick\tAttr"
+			],
+			[
+				"In",
+				"Informatika"
+			],
+			[
+				"Infor",
+				"Informasi"
+			],
+			[
+				"tampi",
+				"tampilform"
+			],
+			[
+				"jml",
+				"jmlTiket"
+			],
+			[
+				"ho",
+				"hobi4"
+			],
+			[
+				"hob",
+				"hobi2"
+			],
+			[
+				"tampil",
+				"tampiltiket"
+			],
+			[
+				"h",
+				"hobi3"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"a",
+				"align\tAttr"
+			],
+			[
+				"ce",
+				"checkbox"
+			],
+			[
+				"pa",
+				"placeholder\tAttr"
+			],
+			[
+				"tr",
+				"tr\tTag"
+			],
+			[
+				"max",
+				"maxlength\tAttr"
+			],
+			[
+				"ta",
+				"tabel"
+			],
+			[
+				"wid",
+				"width\tproperty"
+			],
+			[
+				"ac",
+				"action\tAttr"
+			],
+			[
+				"rum",
+				"rumusKeliling"
+			],
+			[
+				"L",
+				"Lingkaran"
+			],
+			[
+				"hasi",
+				"hasil"
+			],
+			[
+				"tke",
+				"teks2"
+			],
+			[
+				"tek",
+				"teks1"
+			],
+			[
+				"ti",
+				"tinggiBalok"
+			],
+			[
+				"teks",
+				"teks4"
+			],
+			[
+				"te",
+				"teks2"
+			],
+			[
+				"nil",
+				"nilai2"
+			],
+			[
+				"nila",
+				"nilai1"
+			],
+			[
+				"nilai",
+				"nilai1"
+			],
+			[
+				"ni",
+				"nilai2"
+			],
+			[
+				"nia",
+				"nilai2"
+			],
+			[
+				"vi",
+				"view"
+			],
+			[
+				"font",
+				"font-size\tproperty"
+			],
+			[
+				"tabel",
+				"tabel_2"
+			],
+			[
+				"pu",
+				"public"
+			],
+			[
+				"cel",
+				"cellspacing\tAttr"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/xampp/htdocs/projectSIA/app/Models/User.php",
+		"/C/xampp/htdocs/projectSIA/app/Http/Controllers/HomeController.php",
+		"/C/xampp/htdocs/projectSIA/app/Http/Controllers/UserController.php",
+		"/C/xampp/htdocs/projectSIA/resources/views/welcome.blade.php",
+		"/C/xampp/htdocs/belajar_laravel/resources/views/edit.blade.php",
+		"/C/xampp/htdocs/belajar_laravel/app/Jurusan.php",
+		"/C/xampp/htdocs/belajar_laravel/database/migrations/2020_09_11_132604_mahasiswa.php",
+		"/C/xampp/htdocs/projectSIA/public/asset/css/bootstrap.admin.css",
+		"/C/xampp/htdocs/projectSIA/config/app.php",
+		"/C/xampp/htdocs/projectSIA/bootstrap/app.php",
+		"/C/xampp/htdocs/projectSIA/bootstrap/cache/packages.php",
+		"/C/xampp/htdocs/projectSIA/public/asset/js/bootstrap.js",
+		"/C/xampp/htdocs/projectSIA/public/asset/js/app.js",
+		"/C/xampp/htdocs/projectSIA/public/asset/css/bootstrap-grid.min.css",
+		"/C/xampp/htdocs/projectSIA/public/asset/css/bootstrap.min.css",
+		"/C/xampp/htdocs/projectSIA/public/asset/css/bootstrap-reboot.css",
+		"/C/xampp/htdocs/projectSIA/public/asset/css/bootstrap.css",
+		"/C/xampp/htdocs/projectSIA/public/asset/css/app.css",
+		"/C/xampp/htdocs/projectSIA/resources/views/layouts/app.blade.php",
+		"/C/xampp/htdocs/projectSIA/database/seeders/UserSeeder.php",
+		"/C/xampp/htdocs/projectSIA/database/migrations/2014_10_12_000000_create_users_table.php",
+		"/C/xampp/htdocs/belajar_laravel/database/seeds/MahasiswaSeeder.php",
+		"/C/xampp/htdocs/projectSIA/app/Http/Controllers/Auth/LoginController.php",
+		"/C/xampp/htdocs/projectSIA/app/Http/Controllers/Controller.php",
+		"/C/xampp/htdocs/projectSIA/routes/web.php",
+		"/C/xampp/htdocs/projectSIA/resources/views/home.blade.php",
+		"/C/xampp/htdocs/projectSIA/resources/views/auth/register.blade.php",
+		"/C/xampp/htdocs/projectSIA/resources/views/layouts/layout.blade.php",
+		"/C/xampp/htdocs/projectSIA/resources/login.blade.php",
+		"/C/xampp/htdocs/projectSIA/database/seeders/DatabaseSeeder.php",
+		"/C/xampp/htdocs/projectSIA/.env",
+		"/C/xampp/htdocs/projectSIA/resources/views/auth/login.blade.php",
+		"/C/xampp/htdocs/projectSIA/login.blade.php",
+		"/C/xampp/htdocs/belajar_laravel/routes/web.php",
+		"/C/xampp/htdocs/belajar_laravel/resources/views/gambar.blade.php",
+		"/C/xampp/htdocs/belajar_laravel/bootstrap/app.php",
+		"/C/xampp/htdocs/projectSIA/public/.htaccess",
+		"/C/xampp/htdocs/projectSIA/public/robots.txt",
+		"/C/xampp/htdocs/projectSIA/public/index.php",
+		"/C/xampp/htdocs/projectSIA/resources/views/layouts/layouts.blade.php",
+		"/C/xampp/htdocs/projectSIA/resources/css/app.css",
+		"/C/xampp/htdocs/belajar_laravel/app/Http/Controllers/MahasiswaController.php",
+		"/C/xampp/htdocs/belajar_laravel/resources/views/mahasiswa/create.blade.php",
+		"/C/xampp/htdocs/belajar_laravel/resources/views/mahasiswa/edit.blade.php",
+		"/C/xampp/htdocs/belajar_laravel/resources/views/mahasiswa/index.blade.php",
+		"/D/Boby Aprespa/Documents/Data Perkuliahan Boby/Web Programming/perintah_terminal_laravel.php",
+		"/C/xampp/htdocs/belajar_laravel/app/Mahasiswa.php",
+		"/C/xampp/htdocs/belajar_laravel/resources/views/latihanregister1.blade.php",
+		"/C/xampp/htdocs/belajar_laravel/resources/views/booking.blade.php",
+		"/D/Adobe Illustrator CS6 16.0.2 Final 64 bit PortableAppZ [ChingLiu]/ChingLiu.Install.Notes.nfo",
+		"/C/xampp/htdocs/belajar_laravel/resources/views/create.blade.php",
+		"/C/xampp/htdocs/belajar_laravel/resources/views/index.blade.php",
+		"/C/xampp/htdocs/belajar_laravel/resources/views/register.blade.php",
+		"/C/xampp/htdocs/belajar_laravel/resources/views/forminput.blade.php",
+		"/C/xampp/htdocs/belajar_laravel/resources/views/tampilform.blade.php",
+		"/C/xampp/htdocs/belajar_laravel/resources/views/registertampil.blade.php",
+		"/C/xampp/htdocs/belajar_laravel/database/seeds/DosenSeeder.php",
+		"/C/xampp/htdocs/belajar_laravel/app/DosenModel.php",
+		"/C/xampp/htdocs/belajar_laravel/database/migrations/2020_09_21_090513_dosen.php",
+		"/C/xampp/htdocs/belajar_laravel/database/seeds/JurusanSeeder.php",
+		"/C/Users/BJ-KOMPUTINDO/Documents/perintah_terminal_laravel.php",
+		"/D/Boby Aprespa/Documents/htdocs/oophp/11.abstractClass1.php",
+		"/C/xampp/htdocs/belajar_laravel/resources/views/Mahasiswa/index.blade.php",
+		"/C/xampp/htdocs/belajar_laravel/app/User.php",
+		"/C/xampp/htdocs/belajar_laravel/config/database.php",
+		"/C/xampp/htdocs/belajar_laravel/bootstrap/cache/packages.php",
+		"/D/352849250FB8",
+		"/C/xampp/htdocs/belajar_laravel/app/Http/Controllers/DasarController.php",
+		"/C/xampp/htdocs/codeigniter/application/.htaccess",
+		"/C/xampp/htdocs/belajar_laravel/public/.htaccess",
+		"/C/xampp/htdocs/belajar_laravel/database/migrations/2020_09_14_073935_jurusan.php",
+		"/C/xampp/htdocs/belajar_laravel/resources/js/app.js",
+		"/C/xampp/htdocs/belajar_laravel/database/seeds/DatabaseSeeder.php",
+		"/C/xampp/htdocs/belajar_laravel/database/.gitignore",
+		"/C/xampp/htdocs/belajar_laravel/.env",
+		"/C/xampp/htdocs/belajar_laravel/resources/views/tampilregister.blade.php",
+		"/C/xampp/htdocs/belajar_laravel/resources/views/lthpercabangan.blade.php",
+		"/C/xampp/htdocs/belajar_laravel/resources/views/tabel_2.blade.php",
+		"/C/xampp/htdocs/belajar_laravel/resources/views/nestedif.blade.php",
+		"/C/xampp/htdocs/belajar_laravel/resources/views/swcase.blade.php",
+		"/C/xampp/htdocs/belajar_laravel/resources/views/ifthen.blade.php",
+		"/C/xampp/htdocs/belajar_laravel/resources/views/tampiltiket.blade.php",
+		"/C/xampp/htdocs/belajar_laravel/resources/views/latihan1.blade.php",
+		"/C/xampp/htdocs/belajar_laravel/resources/views/latihanbalok.blade.php",
+		"/C/xampp/htdocs/belajar_laravel/resources/views/latihanlingkaran.blade.php",
+		"/C/xampp/htdocs/belajar_laravel/resources/views/konstanta.blade.php",
+		"/C/xampp/htdocs/belajar_laravel/resources/views/opraritmatika.blade.php",
+		"/C/xampp/htdocs/belajar_laravel/resources/views/oprstring.blade.php",
+		"/C/xampp/htdocs/belajar_laravel/resources/views/oprlogika.blade.php",
+		"/C/xampp/htdocs/belajar_laravel/resources/views/oprbanding.blade.php",
+		"/C/xampp/htdocs/belajar_laravel/resources/views/latihan2.blade.php",
+		"/C/xampp/htdocs/belajar_laravel/resources/views/tipedata.blade.php",
+		"/C/xampp/htdocs/belajar_laravel/resources/views/variabel.blade.php",
+		"/C/xampp/htdocs/belajar_laravel/resources/views/php.blade.php",
+		"/C/xampp/htdocs/belajar_laravel/resources/views/welcome.blade.php",
+		"/C/xampp/htdocs/belajar_laravel/resources/views/link.blade.php",
+		"/C/xampp/htdocs/belajar_laravel/resources/views/tabel.blade.php",
+		"/C/xampp/htdocs/belajar_laravel/resources/views/list.blade.php",
+		"/C/xampp/htdocs/belajar_laravel/resources/views/paragraf.blade.php",
+		"/C/xampp/htdocs/belajar_laravel/resources/views/heading.blade.php",
+		"/C/xampp/htdocs/belajar_laravel/routes/api.php",
+		"/C/xampp/htdocs/belajar_laravel/routes/channels.php",
+		"/C/xampp/htdocs/belajar_laravel/routes/console.php",
+		"/C/xampp/htdocs/belajar_laravel/resources/views/awal.blade.php",
+		"/C/xampp/htdocs/belajar_laravel/resources/views/halo.blade.php",
+		"/C/xampp/htdocs/belajar_laravel/app/Http/Controllers/Controller.php",
+		"/C/xampp/htdocs/belajar_laravel/config/hashing.php",
+		"/D/Boby Aprespa/Documents/TAG HTML.php",
+		"/C/xampp/htdocs/phpdasar/pertemuan5/latihan1.php",
+		"/C/NewCommand.php",
+		"/C/xampp/htdocs/phpdasar/pertemuan4/date.php",
+		"/C/xampp/htdocs/phpdasar/pertemuan4/function.php",
+		"/C/xampp/htdocs/phpdasar/pertemuan3/latihan1.php",
+		"/C/xampp/htdocs/phpdasar/pertemuan3/latihan2.php",
+		"/C/xampp/htdocs/phpdasar/pertemuan3/latihan3.php",
+		"/D/QUERY MYSQL.php",
+		"/C/xampp/htdocs/phpdasar/pertemuan2/pertemuan2.php",
+		"/C/xampp/apache/conf/extra/httpd-xampp.conf",
+		"/C/Windows/System32/drivers/etc/hosts"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 39.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "layout.blade.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\xampp\\htdocs\\belajar_laravel\\resources\\views\\edit.blade.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 150.0,
+	"status_bar_visible": false,
+	"template_settings":
+	{
+	}
+}
