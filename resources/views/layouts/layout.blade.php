@@ -68,8 +68,8 @@
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
            <!--  <h6 class="collapse-header">Custom Components:</h6> -->
-            <a class="collapse-item" href="user">Data Pengguna</a>
-            <a class="collapse-item" href="akun">Data Akun</a>
+            <a class="collapse-item" href="{{ route('user') }}">Data Pengguna</a>
+            <a class="collapse-item" href="{{ route('akun') }}">Data Akun</a>
           </div>
         </div>
       </li>
@@ -136,6 +136,7 @@
 
 
 
+
       <!-- Nav Item - Charts -->
       <!-- <li class="nav-item">
         <a class="nav-link" href="charts.html">
@@ -150,9 +151,11 @@
       <div class="text-center d-none d-md-inline">
         <button class="rounded-circle border-0" id="sidebarToggle"></button>
       </div>
-
+          <span class="fas fa-sm d-flex align-items-center justify-content-center">DIBUAT OLEH BOBY APRESPA</span>
+          <span class="fas fa-sm d-flex align-items-center justify-content-center">COPYRIGHT ©2020</span>
     </ul>
     <!-- End of Sidebar -->
+
 
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
@@ -168,10 +171,11 @@
             <i class="fa fa-bars"></i>
           </button>
 
+        
           <!-- Topbar Search -->
           <!-- <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-            <div class="input-group">
-              <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+            <div class="input-group" align="right">
+              <input type="text" class="form-control bg-light border-1 small" placeholder="Cari user" aria-label="Search" aria-describedby="basic-addon2">
               <div class="input-group-append">
                 <button class="btn btn-primary" type="button">
                   <i class="fas fa-search fa-sm"></i>
@@ -179,6 +183,7 @@
               </div>
             </div>
           </form> -->
+
 
           <h3>Sistem Informasi Akuntansi PT XYZ</h3>
 
@@ -314,7 +319,7 @@
 
             <!-- Nav Item - User Information -->
             <li class="nav-item dropdown no-arrow">
-              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="{{ route('home') }}" role="button">
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">{{ Auth::user()->name }}</span>
                 <img class="img-profile rounded-circle" src="{{ asset('asset/avatar.png')}}">
               </a>
