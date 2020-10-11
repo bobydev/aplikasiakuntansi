@@ -14,7 +14,7 @@
     <table class="table table-bordered" width="100%" align="center">
      <tr align="center"><td><h2>Laporan Kas keluar<br>PT. XYZ</h2><hr></td></tr>
     </table>
-    <table class="table tablebordered" id="dataTable" width="100%" cellspacing="0">
+    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
           <thead>
              <tr align="center">
                  <th width="5%">No</th>
@@ -27,18 +27,18 @@
           <tbody>
           @php $i=1 @endphp
           @foreach ($kaskeluar as $kk)
-             <tr>
+             <tr align="center">
                  <td>{{$i++}}</td>
-                 <td>{{$kk->nokk}}</td>
-                 <td>{{$kk->tglkk}}</td>
-                 <td>{{$kk->memokk}}</td>
-                 <td>{{$kk->jmkk}}</td>
+                 <td>{{$kk->no_kk}}</td>
+                 <td>{{$kk->tgl_kk}}</td>
+                 <td>{{$kk->memo_kk}}</td>
+                 <td>{{$kk->jml_kk}}</td>
              </tr>
           @endforeach
      </tbody>
     </table>
  <div align="right">
- 	         <h6>Tanda Tangan</h6><br><br><h6>{{ Auth::user()->name }}</h6>
+ 	         <h6>Tanda Tangan</h6><br><h6>{{ Auth::user()->name }}</h6>
         </div>
 </body>
 </html>

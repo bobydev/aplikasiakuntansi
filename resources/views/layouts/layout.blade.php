@@ -10,7 +10,7 @@
     <title>Pemrograman Akuntansi 1</title>
 
     <!-- Scripts -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js" type="text/javascript"defer></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js" type="text/javascript" defer></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -19,7 +19,9 @@
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="{{ asset('asset/css/sb-admin-2.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('asset/css/sb-admin-2.min.css') }}">
-    <link href="{{ asset('asset/vendor/datatables/dataTables.bootstrap4.min.css')}}" rel="stylesheet"> 
+    <link type="text/css" href="{{ asset('asset/vendor/datatables/css/dataTables.bootstrap4.css')}}" rel="stylesheet">
+    <link type="text/css" href="{{ asset('asset/vendor/datatables/css/dataTables.bootstrap4.min.css')}}" rel="stylesheet">
+    <link type="text/css" href="{{ asset('asset/vendor/datatables/css/select.bootstrap4.css')}}" rel="stylesheet"> 
     <link href="{{ asset('asset/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">  
 
 </head>
@@ -68,8 +70,8 @@
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
            <!--  <h6 class="collapse-header">Custom Components:</h6> -->
-            <a class="collapse-item" href="user">Data Pengguna</a>
-            <a class="collapse-item" href="akun">Data Akun</a>
+            <a class="collapse-item" href="{{ route('user') }}">Data Pengguna</a>
+            <a class="collapse-item" href="{{ route('akun') }}">Data Akun</a>
           </div>
         </div>
       </li>
@@ -83,9 +85,9 @@
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
            <!--  <h6 class="collapse-header">Custom Utilities:</h6> -->
-            <a class="collapse-item" href="kasmasuk">Kas Masuk</a>
-            <a class="collapse-item" href="kaskeluar">Kas Keluar</a>
-            <a class="collapse-item" href="bukubesar">Buku Besar</a>
+            <a class="collapse-item" href="{{ route('kasmasuk') }}">Kas Masuk</a>
+            <a class="collapse-item" href="{{ route('kaskeluar') }}">Kas Keluar</a>
+            <a class="collapse-item" href="{{ route('bukubesar') }}">Buku Besar</a>
             <!-- <a class="collapse-item" href="utilities-other.html">Other</a> -->
           </div>
         </div>
@@ -121,17 +123,18 @@
 
       <!-- Nav Item - Tables -->
       <li class="nav-item">
-        <a class="nav-link" href="laporan">
+        <a class="nav-link" href="{{route('laporan')}}">
           <i class="fas fa-fw fa-table"></i>
           <span>Laporan</span></a>
       </li>
 
 
       <li class="nav-item">
-        <a class="nav-link" href="logout">
+        <a class="nav-link" href="{{ route('logout') }}">
           <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
           <span>Keluar</span></a>
       </li>
+
 
 
 
@@ -150,9 +153,11 @@
       <div class="text-center d-none d-md-inline">
         <button class="rounded-circle border-0" id="sidebarToggle"></button>
       </div>
-
+          <span class="fas fa-sm d-flex align-items-center justify-content-center">DIBUAT OLEH BOBY APRESPA</span>
+          <span class="fas fa-sm d-flex align-items-center justify-content-center">COPYRIGHT ©2020</span>
     </ul>
     <!-- End of Sidebar -->
+
 
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
@@ -168,10 +173,11 @@
             <i class="fa fa-bars"></i>
           </button>
 
+        
           <!-- Topbar Search -->
           <!-- <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-            <div class="input-group">
-              <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+            <div class="input-group" align="right">
+              <input type="text" class="form-control bg-light border-1 small" placeholder="Cari user" aria-label="Search" aria-describedby="basic-addon2">
               <div class="input-group-append">
                 <button class="btn btn-primary" type="button">
                   <i class="fas fa-search fa-sm"></i>
@@ -179,6 +185,7 @@
               </div>
             </div>
           </form> -->
+
 
           <h3>Sistem Informasi Akuntansi PT XYZ</h3>
 
@@ -314,7 +321,7 @@
 
             <!-- Nav Item - User Information -->
             <li class="nav-item dropdown no-arrow">
-              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="{{ route('home') }}" role="button">
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">{{ Auth::user()->name }}</span>
                 <img class="img-profile rounded-circle" src="{{ asset('asset/avatar.png')}}">
               </a>
@@ -349,18 +356,24 @@
     </main>
     </div>
    <!-- Bootstrap core JavaScript--> 
+   <script src="{{ asset('asset/vendor/jquery/jquery.js')}}"></script> 
    <script src="{{ asset('asset/vendor/jquery/jquery.min.js')}}"></script> 
+   <script src="{{ asset('asset/vendor/bootstrap/js/bootstrap.bundle.js')}}"></script> 
    <script src="{{ asset('asset/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script> 
+   <script src="{{ asset('asset/vendor/bootstrap/js/bootstrap.min.js')}}"></script> 
 
    <!-- Core plugin JavaScript--> 
    <script src="{{ asset('asset/vendor/jquery-easing/jquery.easing.min.js')}}"></script> 
 
    <!-- Custom scripts for all pages--> 
+   <script src="{{ asset('asset/js/sb-admin-2.js')}}"></script> 
    <script src="{{ asset('asset/js/sb-admin-2.min.js')}}"></script> 
 
    <!-- Page level plugins --> 
    <script src="{{ asset('asset/vendor/chart.js/Chart.min.js')}}"></script>
+   <script src="{{ asset('asset/vendor/datatables/jquery.dataTables.js')}}"></script>  
    <script src="{{ asset('asset/vendor/datatables/jquery.dataTables.min.js')}}"></script> 
+   <script src="{{ asset('asset/vendor/datatables/dataTables.bootstrap4.js')}}"></script>
    <script src="{{ asset('asset/vendor/datatables/dataTables.bootstrap4.min.js')}}"></script> 
 
    <!-- Page level custom scripts --> 

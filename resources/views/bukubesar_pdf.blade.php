@@ -3,19 +3,19 @@
 <head>
   <title>Laporan Buku Besar</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <style type="text/css">
      table tr td,
      table tr th{
-     font-size: 10pt;
- }
+      font-size: 10pt;
+     }
     </style>
 </head>
 <body>
     <table class="table table-bordered" width="100%" align="center">
      <tr align="center"><td><h2>Laporan Buku Besar<br>PT. XYZ</h2><hr></td></tr>
-
     </table>
-     <table class="table table-bordered" width="100%" align="center">
+     <table class="table table-bordered" id="dataTable" width="100%" align="center">
       <thead>
        <tr>
          <th width="5%">No</th>
@@ -31,17 +31,17 @@
         @foreach ($bukubesar as $bb)
        <tr align="center">
           <td>{{$i++}}</td>
-          <td>{{$bb->notran}}</td>
-          <td>{{$bb->tgltran}}</td>
+          <td>{{$bb->no_trans}}</td>
+          <td>{{$bb->tgl_trans}}</td>
           <td>{{$bb->catatan}}</td>
-          <td>{{$bb->jmldb}}</td>
-          <td>{{$bb->jmlcr}}</td>
+          <td>{{$bb->jml_db}}</td>
+          <td>{{$bb->jml_cr}}</td>
           </tr>
         @endforeach
       </tbody>
      </table>
      <div align="right">
-          <h6>Tanda Tangan</h6><br><br><h6>{{ Auth::user()->name }}</h6>
+          <h6>Tanda Tangan</h6><br><h6>{{ Auth::user()->name }}</h6>
      </div>
 </body>
 </html>

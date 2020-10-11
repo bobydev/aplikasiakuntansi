@@ -1,11 +1,11 @@
 @extends('layouts.layout')
 @section('content')
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
- 	<h1 class="h3 mb-0 ml-md-3 text-gray-800">Data Kas Keluar</h1>
+ 	<h1 class="h3 mb-0 ml-md-3 text-gray-800">Data Kas Masuk</h1>
 </div><hr>
 
 <div class="card-header py-3" align="right">
- 	<a href="{{route('kaskeluar.inputkk')}}" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+ 	<a href="{{route('kasmasuk.inputkm')}}" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
  	<i class="fas fa-plus fa-sm text-white-50"></i> Tambah </a>
 </div><br>
 
@@ -24,17 +24,17 @@
  			</thead>
  			<tbody>
  
- 				@foreach ($kaskeluar as $kk)
+ 				@foreach ($kasmasuk as $km)
  				<tr align="center">
- 					<td>{{$kk->no_kk}}</td>
- 					<td>{{$kk->tgl_kk}}</td>
- 					<td>{{$kk->memo_kk}}</td>
- 					<td>{{$kk->jml_kk}}</td>
+ 					<td>{{$km->no_km}}</td>
+ 					<td>{{$km->tgl_km}}</td>
+ 					<td>{{$km->memo_km}}</td>
+ 					<td>{{$km->jml_km}}</td>
  					<td align="center">
- 						<a href="/detailkk/show/{{$kk->id}}" class="d-none d-sm-inline-block btn btn-sm btn-dark shadow-sm">
+ 						<a href="/detailkm/show/{{$km ->id}}" class="d-none d-sm-inline-block btn btn-sm btn-dark shadow-sm">
  							<i class="fas fa-edit fa-sm text-white-50"></i> Detail
  						</a>
- 						<a href="/kaskeluar/destroy/{{ $kk->id }}" onclick="return confirm('Kamu yakin ingin menghapus data?')" class="d-none d-sm-inline-block btn btn-sm btn-danger shadow-sm">
+ 						<a href="/kasmasuk/destroy/{{ $km->id }}" onclick="return confirm('Kamu yakin ingin menghapus data?')" class="d-none d-sm-inline-block btn btn-sm btn-danger shadow-sm">
  							<i class="fas fa-trash-alt fa-sm text-white-50"></i> Hapus
  						</a>
  					</td>
