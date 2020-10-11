@@ -1,10 +1,10 @@
 <p align="center"><a href="https://bsi.ac.id" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
-FAKULTAS TEKNIK DAN INFORMATIKA <br>
-PROGRAM STUDI SISTEM INFORMASI AKUNTANSI <br>
-UNIVERSITAS BINA SARANA INFORMATIKA <br>
-PSDKU CIKAMPEK
+<b>FAKULTAS TEKNIK DAN INFORMATIKA</b> <br>
+<b>PROGRAM STUDI SISTEM INFORMASI AKUNTANSI<b> <br>
+<b>UNIVERSITAS BINA SARANA INFORMATIKA<b> <br>
+<b>PSDKU CIKAMPEK<b>
 </p>
 
 ## APLIKASI AKUNTANSI SEDERHANA BERBASIS WEB
