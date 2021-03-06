@@ -3,6 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use App\Models\BukuBesar;
+use App\Models\KasMasuk;
+use App\Models\KasKeluar;
+use App\Models\BarangLaku;
+use PDF;
 
 class LaporanController extends Controller
 {
@@ -29,81 +35,100 @@ class LaporanController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+    * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Request $request)
+public function show(Request $request)
     {
-        $periode=$request->get('periode');
-        $jenis=$request->get('jenis');
-        if($jenis=='bukubesar')
-        {
-           if($periode == 'All')
-           {
-              $bb = \App\BukuBesar::All();
-              $pdf = PDF::loadview('bukubesar.bukubesar_pdf',['bukubesar'=>$bb])->setPaper('A4','landscape');
-              return $pdf->stream();
-           }elseif($periode == 'periode'){
-              $tglawal=$request->get('tglawal');
-              $tglakhir=$request->get('tglakhir');
-              $bb=DB::table('buku_besar')
-              ->whereBetween('tgltran', [$tglawal,$tglakhir])
-              ->orderby('tgltran','ASC')
-              ->get();
-              $pdf = PDF::loadview('bukubesar.bukubesar_pdf',['bukubesar'=>$bb])->setPaper('A4','landscape');
-              return $pdf->stream();
-           }
-           }
-           elseif($jenis=='kaskeluar')
-           {
-            if($periode == 'All')
-            {
-               $data = \App\KasKeluar::All();
-               $pdf = PDF::loadview('kaskeluar.kaskeluar_pdf',['kaskeluar'=>$data])->setPaper('A4','landscape');
-               return $pdf->stream();
-           }elseif($periode == 'periode'){
-               $tglawal=$request->get('tglawal');
-               $tglakhir=$request->get('tglakhir');
-               $data=DB::table('kas_keluar')
-               ->whereBetween('tglkk', [$tglawal,$tglakhir])
-               ->orderby('tglkk','ASC')
+      $periode = $request->get('periode');
+      $jenis = $request->get('jenis');
+
+      if($jenis == 'baranglaku'){
+        if($periode == 'All'){
+        $baranglaku = \App\Models\BarangLaku::All();
+        $pdf = PDF::loadview('baranglaku_pdf',['baranglaku' => $baranglaku])->setPaper('A4','landscape');
+
+        return $pdf->stream('laporan_penjualan.pdf');
+       }elseif($periode == 'periode'){
+          $tglawal = $request->get('tglawal');
+          $tglakhir = $request->get('tglakhir');
+          $baranglaku = DB::table('barang_lakus')
+                ->whereBetween('tanggal', [$tglawal,$tglakhir])
+                ->orderby('tanggal','ASC')
+                ->get();
+          $pdf = PDF::loadview('baranglaku_pdf',['baranglaku' => $baranglaku])->setPaper('A4','landscape');
+
+          return $pdf->stream('laporan_penjualan.pdf');
+        }
+    }
+        elseif($jenis == 'bukubesar'){
+          if($periode == 'All'){
+          $bb = \App\Models\BukuBesar::All();
+          $pdf = PDF::loadview('bukubesar_pdf',['bukubesar' => $bb])->setPaper('A4','landscape');
+
+          return $pdf->stream('laporan_buku_besar.pdf');
+          }elseif($periode == 'periode'){
+          $tglawal = $request->get('tglawal');
+          $tglakhir = $request->get('tglakhir');
+          $bb = DB::table('buku_besars')
+                ->whereBetween('tgl_trans', [$tglawal,$tglakhir])
+                ->orderby('tgl_trans','ASC')
+                ->get();
+          $pdf = PDF::loadview('bukubesar_pdf',['bukubesar' => $bb])->setPaper('A4','landscape');
+
+          return $pdf->stream('laporan_buku_besar.pdf');
+         }
+        }
+
+        elseif($jenis == 'kaskeluar'){
+          if($periode == 'All'){
+            $data = \App\Models\KasKeluar::All();
+            $pdf = PDF::loadview('kaskeluar_pdf',['kaskeluar'=>$data])->setPaper('A4','landscape');
+            
+            return $pdf->stream('laporan_kas_keluar.pdf');
+          }elseif($periode == 'periode'){
+            $tglawal=$request->get('tglawal');
+            $tglakhir=$request->get('tglakhir');
+            $data=DB::table('kas_keluars')
+               ->whereBetween('tgl_kk', [$tglawal,$tglakhir])
+               ->orderby('tgl_kk','ASC')
                ->get();
-               $pdf = PDF::loadview('kaskeluar.kaskeluar_pdf',['kaskeluar'=>$data])->setPaper('A4','landscape');
-               return $pdf->stream();
-           }
-           }
-           elseif($jenis=='kasmasuk')
-           {
-           if($periode == 'All')
-           {
-               $data = \App\KasMasuk::All();
-               $pdf = PDF::loadview('kasmasuk.kasmasuk_pdf',['kasmasuk'=>$data])->setPaper('A4','landscape');
-               return $pdf->stream();
-            }elseif($periode == 'periode'){
-               $tglawal=$request->get('tglawal');
-               $tglakhir=$request->get('tglakhir');
-               $data=DB::table('kas_masuk')
-              ->whereBetween('tglkm', [$tglawal,$tglakhir])
-              ->orderby('tglkm','ASC')
-              ->get();
-            $pdf = $pdf = PDF::loadview('kasmasuk.kasmasuk_pdf',['kasmasuk'=>$data])->setPaper('A4','landscape');
-               return $pdf->stream();
-            }
-            }
-            }
+            $pdf = PDF::loadview('kaskeluar_pdf',['kaskeluar'=>$data])->setPaper('A4','landscape');
+            
+            return $pdf->stream('laporan_kas_keluar.pdf');
           }
         }
 
+        elseif($jenis == 'kasmasuk'){
+          if($periode == 'All'){
+            $data = \App\Models\KasMasuk::All();
+            $pdf = PDF::loadview('kasmasuk_pdf',['kasmasuk'=>$data])->setPaper('A4','landscape');
+            
+            return $pdf->stream('laporan_kas_masuk.pdf');
+          }elseif($periode == 'periode'){
+            $tglawal=$request->get('tglawal');
+            $tglakhir=$request->get('tglakhir');
+            $data=DB::table('kas_masuks')
+              ->whereBetween('tgl_km', [$tglawal,$tglakhir])
+              ->orderby('tgl_km','ASC')
+              ->get();
+            $pdf = $pdf = PDF::loadview('kasmasuk_pdf',['kasmasuk'=>$data])->setPaper('A4','landscape');
+               return $pdf->stream('laporan_kas_masuk.pdf');
+          }
+
+        }
+
+    }      
     /**
      * Display the specified resource.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
-    {
-        //
-    }
+    // public function show($id)
+    // {
+    //     //
+    // }
 
     /**
      * Show the form for editing the specified resource.
@@ -139,3 +164,4 @@ class LaporanController extends Controller
         //
     }
 }
+          
