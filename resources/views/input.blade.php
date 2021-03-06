@@ -2,7 +2,7 @@
 @section('content')
 <form enctype="multipart/form-data" action="{{route('user.store')}}" method="POST">
 @csrf
-  <fieldset class="ml-md-3">
+  <fieldset>
     <legend>Input Data Pengguna</legend>
     <div class="form-group row">
       <div class="col-md-5">

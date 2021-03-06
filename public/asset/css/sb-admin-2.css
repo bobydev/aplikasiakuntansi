@@ -24,7 +24,7 @@
   --white: #fff;
   --gray: #858796;
   --gray-dark: #5a5c69;
-  --primary: #e3007b;
+  --primary: #4e73df;
   --secondary: #858796;
   --success: #1cc88a;
   --info: #36b9cc;
@@ -66,10 +66,7 @@ body {
   line-height: 1.5;
   color: #858796;
   text-align: left;
-  background-color: #e3007b;
-  background-image: url(mg_logo.png);
-  background-repeat: repeat;
-  background-size: 200px;
+  background-color: #5a5c69;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -367,7 +364,6 @@ h1, h2, h3, h4, h5, h6,
   margin-bottom: 0.5rem;
   font-weight: 400;
   line-height: 1.2;
-  color: #fff;
 }
 
 h1, .h1 {
@@ -4484,7 +4480,7 @@ input[type="button"].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #36b9cc;
+  background-color: #fff;
   background-clip: border-box;
   border: 1px solid #e3e6f0;
   border-radius: 0.35rem;
@@ -9879,7 +9875,7 @@ a:focus {
 }
 
 .bg-gradient-primary {
-  background-color: #e3007b;
+  background-color: #4e73df;
   background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
   background-size: cover;
 }

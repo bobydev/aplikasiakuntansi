@@ -1,18 +1,18 @@
 @extends('layouts.layout')
 @section('content')
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
- 	<h1 class="h3 mb-0 ml-md-3 text-gray-800">Data Transaksi Kas Keluar</h1>
+ 	<h1 class="h3 mb-0 text-gray-800">Data Kas Keluar</h1>
 </div><hr>
 
 <div class="card-header py-3" align="right">
- 	<a href="{{route('kaskeluar.inputkk')}}" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+ 	<a href="{{route('kaskeluar.create')}}" class="d-none d-sm-inlineblock btn btn-sm btn-primary shadow-sm">
  	<i class="fas fa-plus fa-sm text-white-50"></i> Tambah </a>
-</div><br>
+</div>
 
 <div class="d-sm-flex align-items-center justify-content-between mb-4"> 
 	<div class="card-body">
  	<div class="table-responsive">
- 		<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+ 		<table class="table tablebordered" id="dataTable" width="100%" cellspacing="0">
  			<thead>
  				<tr align="center">
  					<th width="20%">No Transaksi</th>
@@ -25,16 +25,16 @@
  			<tbody>
  
  				@foreach ($kaskeluar as $kk)
- 				<tr align="center">
- 					<td>{{$kk->no_kk}}</td>
- 					<td>{{$kk->tgl_kk}}</td>
- 					<td>{{$kk->memo_kk}}</td>
- 					<td>{{$kk->jml_kk}}</td>
+ 				<tr>
+ 					<td>{{$kk->nokk}}</td>
+ 					<td>{{$kk->tglkk}}</td>
+ 					<td>{{$kk->memokk}}</td>
+ 					<td>{{$kk->jmkk}}</td>
  					<td align="center">
- 						<a href="/detailkk/show/{{$kk->id}}" class="d-none d-sm-inline-block btn btn-sm btn-dark shadow-sm">
+ 						<a href="{{route( 'kaskeluar.show' ,[$kk ->id])}}" class="dnone d-sm-inline-block btn btn-sm btn-dark shadow-sm">
  							<i class="fas fa-edit fa-sm text-white-50"></i> Detail
  						</a>
- 						<a href="/kaskeluar/destroy/{{ $kk->id }}" onclick="return confirm('Kamu yakin ingin menghapus data?')" class="d-none d-sm-inline-block btn btn-sm btn-danger shadow-sm">
+ 						<a href="/kaskeluar/hapus/{{ $kk->id }}" onclick="return confirm('Yakin Ingin menghapus data?')" class="dnoned-sm-inline-block btn btn-sm btn-danger shadow-sm">
  							<i class="fas fa-trash-alt fa-sm text-white-50"></i> Hapus
  						</a>
  					</td>
