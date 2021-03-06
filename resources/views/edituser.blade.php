@@ -4,7 +4,7 @@
 <form enctype="multipart/form-data" action="{{route('user.update')}}" method="POST">
 @csrf
     <input type="hidden" name="id" value="{{ $usr->id }}">
-  <fieldset>
+  <fieldset class="ml-md-3">
     <legend>Edit Data Pengguna</legend>
     <div class="form-group row">
       <div class="col-md-5">
@@ -43,17 +43,17 @@
     <div class="form-group row">
       <div class="col-md-5">
          <label for="passw">Password</label>
-          <input id="passw" type="password" name="passw" class="form-control" value="{{ $usr->password }}"required>
+          <input id="passw" type="password" name="passw" class="form-control">
    </div>
       <div class="col-md-5">
           <label for="kpassw">Konfirm Password</label>
-           <input id="kpassw" type="password" name="kpassw" class="form-control" value="{{ $usr->password }}"required>
+           <input id="kpassw" type="password" name="kpassw" class="form-control">
    </div>
   </div>
     <div class="form-group row">
       <div class="col-md-5">
          <label for="status">Status</label>
-         <select id="status" name="status" class="form-control" value="{{ $usr->status }}"required>
+         <select id="status" name="status" class="form-control" value="{{ $usr->status }}" required>
             <option value="">--Pilih Status--</option>
             <option value="ACTIVE">AKTIF</option>
             <option value="INACTIVE">NON AKTIF</option>

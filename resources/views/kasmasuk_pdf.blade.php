@@ -13,9 +13,9 @@ ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="a
 </head>
 <body>
  <table class="table table-bordered" width="100%" align="center">
- 	<tr align="center"><td><h2>Laporan Kas Masuk<br>PT. XYZ</h2><hr></td></tr>
+ 	<tr align="center"><td><h2>LAPORAN KEUANGAN TRANSAKSI KAS MASUK<br>CV MAKMUR GROUP</h2><hr></td></tr>
   </table>
-  <table class="table tablebordered" id="dataTable" width="100%" cellspacing="0">
+  <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
        <thead>
           <tr align="center">
              <th width="5%">No</th>
@@ -28,18 +28,18 @@ ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="a
         <tbody>
         @php $i=1 @endphp
         @foreach ($kasmasuk as $km)
-          <tr>
+          <tr align="center">
              <td>{{$i++}}</td>
-             <td>{{$km->nokm}}</td>
-             <td>{{$km->tglkm}}</td>
-             <td>{{$km->memokm}}</td>
-             <td>{{$km->jmkm}}</td>
+             <td>{{$km->no_km}}</td>
+             <td>{{$km->tgl_km}}</td>
+             <td>{{$km->memo_km}}</td>
+             <td>{{$km->jml_km}}</td>
           </tr>
          @endforeach
        </tbody>
     </table>
     <div align="right">
-         <h6>Tanda Tangan</h6><br><br><h6>{{ Auth::user()->name }}</h6>
+         <h6>Tanda Tangan</h6><br><h6>{{ Auth::user()->name }}</h6>
     </div>
 </body>
 </html>

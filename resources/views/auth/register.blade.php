@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Pemrograman Akuntansi 1</title>
+    <title>CV MAKMUR GROUP</title>
     <!-- custom fonts for this template -->
     <link rel="stylesheet" type="text/css" href="{{ asset('asset/vendor/fontawesome-free/css/all.min.css') }}">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
@@ -27,15 +27,15 @@
                                 <div class="col-lg-20">
                                     <div class="p-4">
                                         <div class="text-center">
-                                            <h1 class="h4 text-white-900 mb-4">Sistem Informasi Akuntansi <br> Fakultas Teknik dan Informatika <br><br> <img src="{{ asset('asset/BSI_logo.png')}}" width="160"></h1>
+                                            <h1 class="h4 text-white-900 mb-4">SISTEM INFORMASI AKUNTANSI <br> CV MAKMUR GROUP <br><br> <img src="{{ asset('asset/mg_logo.png')}}" width="160"></h1>
                                         </div>
                                             <form method="POST" action="{{ route('register') }}">
                                                 @csrf
-                                                <div class="form-group row">
+                                                <div class="form-group row text-white">
                             <label for="name" class="col-md-3 col-form-label text-md-right">{{ __('Nama') }}</label>
 
                             <div class="col-md-6">
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" placeholder="Nama kamu siapa?" required autocomplete="name" autofocus>
 
                                 @error('name')
                                     <span class="invalid-feedback" role="alert">
@@ -45,11 +45,11 @@
                             </div>
                         </div>
 
-                        <div class="form-group row">
+                        <div class="form-group row text-white">
                             <label for="email" class="col-md-3 col-form-label text-md-right">{{ __('E-Mail') }}</label>
 
                             <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" placeholder="E-Mail kamu apa?" required autocomplete="email">
 
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
@@ -59,11 +59,11 @@
                             </div>
                         </div>
 
-                        <div class="form-group row">
+                        <div class="form-group row text-white">
                             <label for="password" class="col-md-3 col-form-label text-md-right">{{ __('Password') }}</label>
 
                             <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" placeholder="Isi password-mu yaa" required autocomplete="new-password">
 
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
@@ -73,11 +73,11 @@
                             </div>
                         </div>
 
-                        <div class="form-group row">
+                        <div class="form-group row text-white">
                             <label for="password-confirm" class="col-md-3 col-form-label text-md-right">{{ __('Konfirmasi Password') }}</label>
 
                             <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="Isi sekali lagi dong" required autocomplete="new-password">
                             </div>
                         </div>
 
